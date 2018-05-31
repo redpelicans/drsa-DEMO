@@ -1,0 +1,1242 @@
+/**/
+
+/*font-face*/
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./fonts/HelveticaNeueLTStd-Roman/HelveticaNeueLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/HelveticaNeueLTStd-Roman/HelveticaNeueLTStd-Roman.otf') format('opentype'),
+    url('./fonts/HelveticaNeueLTStd-Roman/HelveticaNeueLTStd-Roman.woff') format('woff'),
+    url('./fonts/HelveticaNeueLTStd-Roman/HelveticaNeueLTStd-Roman.ttf') format('truetype'),
+    url('./fonts/HelveticaNeueLTStd-Roman/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./fonts/HelveticaNeueLTStd-Md/HelveticaNeueLTStd-Md.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/HelveticaNeueLTStd-Md/HelveticaNeueLTStd-Md.otf') format('opentype'),
+    url('./fonts/HelveticaNeueLTStd-Md/HelveticaNeueLTStd-Md.woff') format('woff'),
+    url('./fonts/HelveticaNeueLTStd-Md/HelveticaNeueLTStd-Md.ttf') format('truetype'),
+    url('./fonts/HelveticaNeueLTStd-Md/HelveticaNeueLTStd-Md.svg#HelveticaNeueLTStd-Md') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./fonts/HelveticaNeueLTStd-Bd/HelveticaNeueLTStd-Bd.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/HelveticaNeueLTStd-Bd/HelveticaNeueLTStd-Bd.otf') format('opentype'),
+    url('./fonts/HelveticaNeueLTStd-Bd/HelveticaNeueLTStd-Bd.woff') format('woff'),
+    url('./fonts/HelveticaNeueLTStd-Bd/HelveticaNeueLTStd-Bd.ttf') format('truetype'),
+    url('./fonts/HelveticaNeueLTStd-Bd/HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*general styles*/
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  color: #20252b;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+body span,
+body p,
+body button,
+body a,
+body div {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.app {
+  padding-top: 0;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.app-bar {
+  background-color: #851714;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+  box-shadow: none;
+}
+
+.app-bar__toolbar .app-bar__icon {
+  width: 162px;
+  height: 22px;
+  background-image: url('./img/logo.svg');
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -81px;
+  top: 50%;
+  margin-top: -11px;
+}
+
+.app-bar__title {
+  display: none;
+}
+
+.app__container {
+  padding-top: 64px;
+}
+
+/*Cookies*/
+
+.cookie-settings {
+  top: auto;
+  bottom: 0;
+  position: absolute;
+  height: auto;
+  left: 0;
+  right: 0;
+  z-index: 500;
+}
+
+.snackbar--cookie-settings {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.snackbar-content--cookie-settings {
+  background-color: transparent;
+  display: flex;
+}
+
+.snackbar-content--cookie-settings div:first-child {
+  flex: 1;
+}
+
+.snackbar-content--cookie-settings div:last-child {
+  display: initial;
+  align-items: center;
+  margin-left: auto;
+  padding-left: 10px;
+  margin-right: 0;
+}
+
+.snackbar-content--cookie-settings span {
+  font-size: 12px;
+}
+
+.snackbar-content--cookie-settings .button__more-informations,
+.snackbar-content--cookie-settings .button__ok {
+  color: #ffffff;
+  text-transform: none;
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+.snackbar-content--cookie-settings .button__more-informations {
+  margin-right: 10px;
+}
+
+/* section--image*/
+.container--images .image--top {
+  width: 140px;
+  height: 73px;
+  background-size: contain;
+  margin: 0 auto;
+  background-position: top center;
+  background-image: url('./img/d-panneuse.svg');
+}
+
+.section--end-screen .container--images .image--top {
+  width: 84px;
+  height: 120px;
+  background-size: contain;
+  background-image: url('./img/operateur.svg');
+}
+
+.container--images .image--bottom {
+  display: none;
+}
+
+.container--images .image--top {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.section--end-screen .image--top {
+  margin-top: 60px;
+}
+
+.container__inner .title,
+.container__inner .subtitle,
+.container__inner .description {
+  text-align: center;
+  color: #20252b;
+}
+
+.container__inner .title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.container__inner .subtitle {
+  font-size: 22px;
+  display: none;
+}
+
+.container__inner .description {
+  font-size: 15px;
+}
+
+.container__inner .description ul {
+  padding-left: inherit;
+}
+
+.container__inner .description ul li {
+  list-style: none;
+}
+
+.container__inner .description ul li a:first-child {
+  background-image: url('./img/google-play.jpg');
+  background-size: 100%;
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  font-size: 0;
+}
+
+.container__inner .description ul li a:last-child {
+  background-image: url('./img/app-store.png');
+  background-size: 100%;
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  font-size: 0;
+}
+
+/*Section Header*/
+.section__header {
+  background-color: transparent;
+  padding-top: 25px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+}
+
+.header__container {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-flex-basis: 100%;
+  -ms-flex-basis: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: normal;
+  color: #20252b;
+  padding-left: 15px;
+  padding-right: 15px;
+  letter-spacing: normal;
+}
+
+.header__container {
+  background-color: transparent;
+}
+
+.section--events .header__container {
+  padding: 0;
+}
+
+.container--questions .container__inner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/*buttons*/
+.button .button__icon {
+  display: none;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #6f7072;
+  font-size: 17px;
+  font-weight: 400;
+  border: 2px solid #6f7072;
+  text-transform: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-width: 88px;
+  box-shadow: none;
+  letter-spacing: 0.2px;
+}
+
+.button.button--confirm {
+  font-size: 20px;
+  padding: 8px 50px;
+  background-color: #ffffff;
+  display: block;
+  margin: 30px auto 0;
+}
+
+.container--questions .button.button--confirm {
+  margin-top: 0;
+}
+
+.button.button--other span:first-child {
+  margin-right: 0;
+}
+
+.button.custom-radio__button {
+  min-width: auto;
+}
+
+.button:disabled {
+  opacity: 0.5;
+}
+
+.button:hover {
+  background-color: #ffffff;
+}
+
+.button:focus {
+  background-color: #a0a0a0;
+  border-color: #6f7072;
+  color: #ffffff;
+}
+
+.button--terms {
+  border: none;
+  height: 35px;
+  margin-top: 5px;
+  text-transform: none;
+  font-size: 10px;
+  font-weight: normal;
+  color: #20252b;
+}
+
+.button--terms:hover,
+.button--terms:focus {
+  background-color: transparent;
+  color: #20252b;
+}
+
+.button--terms > span {
+  padding-left: 20px !important;
+  position: relative;
+}
+
+.button--terms > span::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  margin-top: -7.5px;
+  width: 15px;
+  height: 15px;
+  background-image: url('./img/i-icon.svg');
+}
+
+.container--actions .container__inner {
+  text-align: center;
+}
+
+/* Page Home */
+
+.section--home .container__inner {
+  padding-bottom: 0;
+}
+
+.section--home .image--bottom {
+  display: none;
+}
+
+.section--home .container--images .image--top {
+  margin-bottom: 15px;
+}
+
+.section--home .container--legend {
+  display: none;
+}
+
+.section--home .container--actions .container__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.section--home .container--actions .container__inner::after {
+  position: absolute;
+  content: '';
+  width: 71px;
+  height: 75px;
+  background-image: url(./img/logo-europe-baseline.png);
+  right: 50%;
+  margin-right: -33px;
+  bottom: -70px;
+  background-size: 71px 75px;
+}
+
+.section--home .button.button--confirm {
+  margin-top: 0;
+}
+
+/*cards*/
+
+.card {
+  box-shadow: none;
+}
+
+.card__title {
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  color: #20252b;
+}
+
+.card__header {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.card__header > div {
+  margin-right: 0;
+}
+
+.card .card__icon {
+  display: block;
+  margin: 0 auto;
+  font-size: 0;
+  width: 48px;
+  height: 42px;
+  background-image: url(./img/voiture.svg);
+}
+
+.card--highway .card__icon {
+  width: 50px;
+  height: 50px;
+  background-image: url(./img/autoroute.svg);
+}
+
+.card--car-park .card__icon {
+  width: 65px;
+  height: 65px;
+  background-image: url(./img/car-closed-parking.svg);
+  background-size: 100%;
+}
+
+.card--highway-direction .card__icon {
+  width: 48px;
+  height: 42px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  background-image: url(./img/voiture.svg);
+}
+
+.card--SPARE_TIRE .card__icon {
+  width: 55px;
+  height: 55px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-image: url(./img/picto_roue.svg);
+}
+
+.card--NUMBER_OF_PASSENGER_1_TO_4_PLUS .card__icon {
+  width: 38px;
+  height: 65px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-image: url(./img/picto_securite.svg);
+}
+
+.card__actions,
+.card__children {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card__actions .button,
+.card__children .custom-radio {
+  flex-grow: 1;
+}
+
+.custom-radio input:checked ~ label {
+  background-color: #a0a0a0;
+  border-color: #6f7072;
+  color: #ffffff;
+}
+
+.card__children label {
+  width: 100%;
+}
+
+.card__children .custom-radio:not(:last-child),
+.card__actions .button:not(:last-child) {
+  margin-right: 15px;
+}
+
+.card__actions .button span,
+.card__children .custom-radio label span span {
+  text-transform: lowercase;
+}
+
+.card__actions .button span::first-letter,
+.card__children .custom-radio label span span::first-letter {
+  text-transform: uppercase;
+}
+
+.card--highway-direction .card__children {
+  display: block;
+}
+
+/*Responsive cards*/
+@media (max-width: 400px) {
+  .card__actions,
+  .card__children {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .card__children .custom-radio,
+  .card__actions .button {
+    -webkit-flex-basis: 100% !important;
+    -ms-flex-basis: 100% !important;
+    flex-basis: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 7px;
+    /*margin-top: 7px;*/
+  }
+
+  .card__children {
+    margin-top: 20px;
+  }
+
+  .card__children .custom-radio .button {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 16px;
+  }
+
+  /*.card--NUMBER_OF_PASSENGER_1_TO_4_PLUS .card__content {
+    padding-top: 0;
+  }*/
+
+  .section--events .button.button--confirm {
+    margin-top: 0;
+  }
+}
+
+/*circular-progress*/
+
+.spinner-screen--circular-progress {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  left: 0;
+}
+
+.circular-progress--wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.circular-progress__circular-progress svg circle,
+.spinner-screen--circular-progress svg circle {
+  stroke: #c5281c;
+}
+
+/*Page Incident*/
+
+.section--incidents .grid-list-tile {
+  text-align: left;
+}
+
+.section--incidents .grid-list {
+  display: block;
+}
+
+.section--incidents .grid-list .incident {
+  width: 100% !important;
+  height: auto !important;
+  padding: 0 !important;
+}
+
+.section--incidents .incident__button {
+  display: block;
+  box-shadow: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: none;
+  border-top: 1px solid #d8d8d8;
+  position: relative;
+  padding-left: 45px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.section--incidents .incident__button:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.section--incidents .incident__button::after {
+  position: absolute;
+  content: '';
+  right: 10px;
+  width: 8px;
+  height: 14px;
+  top: 50%;
+  margin-top: -7px;
+  background-image: url(./img/fa-angle.svg);
+  background-size: auto;
+}
+
+.incident__title {
+  background-color: transparent;
+  text-align: left;
+  position: static;
+}
+
+.incident__title span {
+  color: #20252b;
+  font-size: 15px;
+}
+
+.incident__image {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -19px;
+  width: 38px;
+  height: 38px;
+}
+
+.incident--BATTERY_PROBLEM .incident__image {
+  background-image: url('./img/battery.svg');
+}
+
+.incident--ACCIDENT .incident__image {
+  background-image: url('./img/accident.svg');
+}
+
+.incident--FTS .incident__image {
+  background-image: url('./img/flat-tire.svg');
+}
+
+.incident--ETA .incident__image {
+  background-image: url('./img/empty-tank.svg');
+}
+
+.incident--OBR .incident__image {
+  background-image: url('./img/other-breakdown.svg');
+}
+
+.incident--OIN .incident__image {
+  background-image: url('./img/other.svg');
+}
+
+.incident--OIN .incident__button {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.section--events .card__container .button-wrapper label > div > div {
+  height: 44px !important;
+  border: 2px solid #6f7072 !important;
+}
+
+.section--events .card__container .button-wrapper input:checked ~ div > label > div > div {
+  background-color: #a0a0a0 !important;
+  border: 2px solid #6f7072 !important;
+}
+
+.section--events .card__container .button-wrapper input:checked ~ div > label > div > div span {
+  color: #ffffff !important;
+}
+
+/*Page confirmation*/
+
+.section--confirmation .container__inner {
+  padding-top: 0;
+}
+
+.confirmation-list {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.confirmation-list-item {
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.52);
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 0;
+  padding-top: 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.confirmation-list__header {
+  display: none;
+}
+
+.confirmation-list-item div:first-child h3 {
+  color: rgba(0, 0, 0, 0.52);
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.confirmation-list-item div:nth-child(2) {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.section--confirmation .button.button--confirm {
+  margin-top: 10px;
+}
+
+/* Page Information / Forms*/
+.information-form {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.information-form .field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  color: #6f7072;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.field > div::before,
+.react-autosuggest__input::before {
+  background-color: rgb(224, 224, 224) !important;
+  height: 1px !important;
+}
+
+.field--vehicledmcarplate > div::before {
+  background-color: #6f7072 !important;
+}
+
+.field > div::after,
+.react-autosuggest__input::after {
+  height: 1px !important;
+}
+
+.field.field--is-focus > div::after,
+.react-autosuggest__input--focused::after {
+  background-color: #7ed321;
+}
+
+.information-form .field--reqdmphonenumber input {
+  opacity: 1;
+  background-color: #ffffff !important;
+  padding-left: 45px;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.information-form .field--reqdmphonenumber label {
+  transform: translate(0, 1.5px) scale(0.75);
+  transform-origin: top left;
+}
+
+.information-form .flag-dropdown {
+  top: auto;
+  bottom: -43px;
+  background-color: transparent;
+}
+
+.information-form .flag-dropdown .country {
+  font-size: 10px;
+}
+
+.information-form .field--vehicledmcarplate {
+  position: relative;
+  margin-top: 10px;
+}
+
+.information-form .field--vehicledmcarplate > div {
+  margin-top: 0;
+}
+
+.information-form .field--vehicledmcarplate label {
+  left: 40px;
+  top: 6px;
+}
+
+input:-webkit-autofill {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 80px white inset;
+}
+
+.information-form .field--vehicledmcarplate::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  width: 20px;
+  height: 60px;
+  top: 5px;
+  background-color: #851714;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.information-form .field--vehicledmcarplate input {
+  padding-left: 40px;
+  padding-bottom: 22px;
+  padding-top: 30px;
+  border-top: 1px solid #6f7072;
+  border-left: 1px solid #6f7072;
+  border-right: 1px solid #6f7072;
+}
+
+/*Vehicule location*/
+.google-map {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section--vehicle-location .google-map-marker,
+.section--prefered-destination .google-map-marker {
+  background: url(./img/marker-voiture.png) center center no-repeat;
+  background-color: transparent;
+  height: 63px;
+  width: 50px;
+}
+
+.section--vehicle-location .google-map-marker span,
+.section--prefered-destination .google-map-marker span {
+  display: none;
+}
+
+.google-map-location-button,
+.google-map-location-button:hover {
+  background-color: #ffffff !important;
+  bottom: 5rem;
+}
+
+.google-map-location-button .material-icons {
+  color: #000000;
+}
+
+.autocomplete {
+  top: 15px;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.autocomplete .react-autosuggest__input {
+  background-color: #ffffff;
+}
+
+.autocomplete .react-autosuggest__suggestions-container.react-autosuggest__suggestions-container--open {
+  background-color: #ffffff;
+  margin-top: 5px;
+  padding: 10px 20px;
+  margin-right: 40px;
+}
+
+@media (max-width: 550px) {
+  .autocomplete .react-autosuggest__suggestions-container.react-autosuggest__suggestions-container--open {
+    margin-right: 0;
+  }
+}
+
+.autocomplete .react-autosuggest__suggestions-container.react-autosuggest__suggestions-container--open ul {
+  margin-top: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.autocomplete .react-autosuggest__suggestions-container.react-autosuggest__suggestions-container--open li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.autocomplete .autocomplete-item__text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.autocomplete .autocomplete-item__text--secondary {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.autocomplete input {
+  padding: 15px;
+  padding-right: 30px;
+  text-align: left;
+}
+
+.autocomplete .autocomplete__icon {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+}
+
+/*Page Provisioning*/
+.section--provisionning .loader svg circle {
+  stroke: #c5281c;
+  stroke-width: 1px;
+}
+
+.section--provisionning .container--countdown {
+  position: relative;
+}
+
+.section--provisionning .countdown {
+  color: #c5281c;
+  position: absolute;
+  top: 40px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section--provisionning .countdown span {
+  display: block;
+}
+
+.section--provisionning .loader {
+  margin-bottom: 0;
+}
+
+.section--provisionning .container--images .image--bottom {
+  display: none;
+}
+
+/*Page Rating*/
+
+.rating-form ul li:nth-child(even),
+.rating-form ul li:first-child,
+.rating-list-item__header,
+.rating-list-item__label {
+  display: none;
+}
+
+.rating-form ul {
+  display: flex;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.rating-list-item {
+  display: block;
+  cursor: pointer;
+  width: 53px;
+  height: 41px;
+  background-size: 100% 200%;
+  background-position: 0px center;
+  overflow: hidden;
+  text-indent: -1050px;
+  position: relative;
+  z-index: 9;
+  padding: 0;
+}
+
+.rating-list-item__container {
+  width: 53px;
+  height: 41px;
+}
+
+.rating-list-item__icon {
+  color: #fff;
+  background: url(./img/stars2-e2.png) 0 bottom no-repeat;
+  background-size: 53px 82px;
+  position: absolute;
+  left: 50%;
+  width: 53px;
+  z-index: 1;
+  transform: translateX(-50%);
+  height: 41px;
+  margin: 0;
+  transition: none;
+}
+
+.rating-list-item.is-selected .rating-list-item__icon {
+  background-position: 0 0;
+}
+
+.rating-form {
+  margin-top: 20px;
+}
+
+.rating-form legend {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.rating-form fieldset {
+  width: 100%;
+}
+
+.rating-form .field--evaluationdmcommentevaluation,
+.rating-form .field--evaluationdmcommentevaluation > div {
+  display: block;
+}
+
+.section--rating .field--evaluationdmcommentevaluation {
+  margin-top: 15px;
+}
+
+.section--rating fieldset:first-child {
+  margin-bottom: 15px;
+}
+
+/*Page Garage*/
+.section--garage-destination .container--banner {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.section--garage-destination .button-wrapper-other {
+  left: 50%;
+  width: calc(100% - 2rem);
+  margin: auto;
+  bottom: 15px;
+  display: flex;
+  padding: 0 1rem;
+  position: absolute;
+  transform: translate(-50%);
+}
+
+.section--garage-destination .snackbar {
+  top: 64px;
+}
+
+/*Page Terms*/
+.section--term-condition p {
+  text-align: left !important;
+}
+
+.section--term-condition .container--content h1 {
+  font-size: 28px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.section--term-condition h2 {
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+
+.section--term-condition h3 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  text-align: left;
+}
+
+.section--term-condition p,
+.section--term-condition ol,
+.section--term-condition ul {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+.section--term-condition a {
+  color: #c5281c;
+}
+
+.section--term-condition a:focus {
+  text-decoration: none;
+}
+
+/*set google maps container height for all pages*/
+.section--prefered-destination .container__inner > div:first-child,
+.section--vehicle-location .container__inner > div:first-child,
+.section--garage-destination .container__inner > div:first-child,
+.google-map {
+  height: calc(100% - 64px);
+}
+
+/*modals common styles*/
+.modal__title,
+.modal__title h2,
+.modal__body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.modal__actions-container {
+  padding: 10px 20px;
+}
+
+/*modal ineligibility*/
+.modal--ineligibility .modal__actions-container {
+  display: block;
+  padding: 0;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal--ineligibility .modal__actions-container .button {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.modal--ineligibility .modal__actions-container .button span {
+  font-weight: normal;
+  color: #6f7072;
+  font-size: 14px;
+}
+
+.modal--ineligibility .button:focus {
+  background-color: #a0a0a0;
+  border-color: #6f7072;
+}
+
+.modal--ineligibility .button:focus span span {
+  color: #ffffff;
+}
+
+.modal--ineligibility .modal__actions-container .button--check-info {
+  border-color: #b0b2b3;
+}
+
+.modal--ineligibility .modal__actions-container .button > span > span {
+  position: relative;
+  padding-left: 5px;
+}
+.modal--ineligibility .modal__actions-container .button > span {
+  display: flex;
+}
+
+.modal--ineligibility .modal__actions-container .button--retry .icon--keyboard_return {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  left: 0;
+  order: -1;
+  background-image: url(./img/retour.svg);
+}
+
+.modal--ineligibility .modal__actions-container .button--check-info .icon--phone_forwarded {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 24px;
+  font-size: 0;
+  left: 0;
+  order: -1;
+  background-image: url(./img/phone-icon-small.png);
+}
+
+/*modal technical-error*/
+.modal--technical-error .modal__actions-container {
+  text-align: center;
+  display: block;
+}
+
+/*Page Delivery*/
+
+.section--delivery .list-wrapper {
+  background-color: #ffffff;
+}
+
+.section--delivery .information-wrapper--no-appointment .informations-wrapper__text-item h3 > span > span {
+  margin-left: 10px;
+}
+
+.section--delivery li {
+  line-height: 30px;
+}
+
+/*Page Call back*/
+.section--call-me-back .image--top {
+  width: 120px;
+  height: 113px;
+  background-size: 120px 113px;
+  background-image: url('./img/phone-icon.png');
+}
+
+/*Tow truck arrival */
+
+.section--tow-truck-arrival .card .card__icon {
+  background-image: url(./img/d-panneuse.svg);
+  width: 155px;
+  height: 83px;
+}
+
+.section--tow-truck-arrival .card__children {
+  display: block;
+}
+
+.section--tow-truck-arrival .card .icon {
+  font-size: 0;
+}
+
+.section--tow-truck-arrival .button:first-child {
+  margin-right: 15px;
+}
+
+.section--tow-truck-arrival .button--action-appointment {
+  min-width: 100% !important;
+}
+
+.section--tow-truck-arrival .button {
+  flex-grow: 1;
+}
+
+.section--tow-truck-arrival .container--actions .container__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 370px) {
+  .header__title {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

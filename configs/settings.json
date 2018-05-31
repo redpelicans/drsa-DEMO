@@ -1,0 +1,115 @@
+{
+  "GOOGLE_MAP_DEFAULT_CENTER": {
+    "lat": 48.856816,
+    "lng": 2.351052
+  },
+  "UNIVERSAL_ANALYTICS_PROD": "UA-81854940-10",
+  "UNIVERSAL_ANALYTICS_DEV": "UA-81854940-9",
+  "DESTINATION_USE_SHORT_ADDRESS": false,
+  "EVENT_TYPES": ["ACCIDENT", "BATTERY_PROBLEM", "FLAT_TIRE", "BREAKDOWN", "STUCK", "THEFT_BREAKIN",
+  "THEFT_WITH_KEYS", "THEFT_ATTEMPT", "KEY_BROKEN", "KEY_IN_CAR", "KEY_LOST", "FIRE", "VANDALISM", "FUEL_ISSUE"],
+  "EVENTS": [
+    {
+      "TYPE": "FLAT_TIRE",
+      "EVENT_TYPES": ["FLAT_TIRE"]
+    },
+    {
+      "TYPE": "SPARE_TIRE",
+      "EVENT_TYPES": ["FLAT_TIRE"]
+    },
+    {
+      "TYPE": "NUMBER_OF_PASSENGERS",
+      "NUMBER_OF_PASSENGERS_BUTTONS": "5+",
+      "EVENT_TYPES": null
+    },
+    {
+      "TYPE": "PERSON_SPECIAL_NEEDS",
+      "EVENT_TYPES": null
+    },
+    {
+      "TYPE": "PERSON_INJURED",
+      "EVENT_TYPES": ["ACCIDENT"]
+    },
+    {
+      "TYPE": "OTHER_CAR_INVOLVED",
+      "EVENT_TYPES": ["ACCIDENT"]
+    },
+    {
+      "TYPE": "PERSON_INJURED_CAR_INVOLVED",
+      "EVENT_TYPES": ["ACCIDENT"]
+    }
+  ],
+  "ELIGIBILITYCHECK_FIRSTNAME_DISPLAYED": true,
+  "ELIGIBILITYCHECK_LASTNAME_DISPLAYED": true,
+  "ELIGIBILITYCHECK_PHONE_NUMBER_DISPLAYED": true,
+  "ELIGIBILITYCHECK_DEFAULT_REGION": "FR",
+  "ELIGIBILITYCHECK_PHONE_NUMBER_FORMATS": [
+    {
+      "iso2": "fr"
+    },
+    {
+      "iso2": "be"
+    },
+    {
+      "iso2": "ch"
+    },
+    {
+      "iso2": "de"
+    },
+    {
+      "iso2": "it"
+    },
+    {
+      "iso2": "es"
+    }
+  ],
+  "ELIGIBILITYCHECK_CAR_PLATE_DISPLAYED": true,
+  "ELIGIBILITYCHECK_CAR_REFERENTIAL_DISPLAYED": false,
+  "ELIGIBILITYCHECK_MILEAGE_DISPLAYED": false,
+  "ELIGIBILITYCHECK_VEHICLE_TYPE_DISPLAYED": false,
+  "DIAGNOSIS_WITH_OPEN_STREET_MAP": false,
+  "CONFIRMATION_AVAILABLE_FIELDS":[
+      [
+         "FIRSTNAME",
+         "LASTNAME",
+         "PHONE_NUMBER",
+         "CAR_PLATE"
+      ],
+      [
+         "EVENT"
+      ],
+      [
+          "LOCATION"
+      ],
+      [
+         "SPARE_TIRE"
+      ],
+      [
+         "NUMBER_OF_PASSENGERS",
+         "PERSON_SPECIAL_NEEDS",
+         "PERSON_INJURED",
+         "OTHER_CAR_INVOLVED",
+         "PERSON_INJURED_CAR_INVOLVED",
+         "FLAT_TIRE"
+      ]
+  ],
+  "CONFIRMATION_MODIFIABLE_FIELDS":[
+    "LOCATION",
+    "EVENT",
+    "SPARE_TIRE",
+    "NUMBER_OF_PASSENGERS",
+    "PERSON_SPECIAL_NEEDS",
+    "PERSON_INJURED",
+    "OTHER_CAR_INVOLVED",
+    "PERSON_INJURED_CAR_INVOLVED",
+    "FLAT_TIRE"
+  ],
+  "DESTINATION_MAP_ICON":
+    "https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_build_black_36px.svg",
+  "DESTINATION_MAP_ICON_SELECTED":
+    "https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_build_white_36px.svg",
+  "RATING_DISPLAYED": true,
+  "IS_EMERGENCY_BUTTON_DISPLAYED": true,
+  "EMERGENCY_PHONE_NUMBER": "+33200000098",
+  "COOKIE_DURATION": 365
+}
